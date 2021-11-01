@@ -140,14 +140,22 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'maxwellmuthomijr@gmail.com'
+EMAIL_HOST_PASSWORD = 'mmwscyxkavwohzsc'
+EMAIL_PORT = 587
+
 # cloudinary.config(
 #     cloud_name=config('CLOUD_NAME'),
 #     api_key=config('CLOUD_API_KEY'),
 #     api_secret=config('CLOUD_API_SECRET'))
+ 
+ 
     
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
 LOGIN_REDIRECT_URL = 'index'
 LOGIN_URL = 'login'
-
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_PROFILE_MODULE = 'accounts.Profile'
 # django_heroku.settings(locals())
