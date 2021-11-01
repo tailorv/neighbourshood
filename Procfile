@@ -1,0 +1,1 @@
+web: gunicorn area51_project.wsgi --log-file -
