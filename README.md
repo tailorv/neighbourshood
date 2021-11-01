@@ -23,9 +23,12 @@
 * Change My neighborhood when I decide to move out.
 * Only view details of a single neighborhood.
 
-### System Features
-# Features 
-* NeighbourHood class:
+## System Features
+
+# Features
+
+
+### NeighbourHood class:
 
 * A neighborhood class with the following properties:
 
@@ -35,7 +38,7 @@
 4. Admin Foreign key
 
 
-* User class
+### User class
 * A user class with the following properties;
 
 1. Name.
@@ -43,7 +46,7 @@
 3. Neighborhood id foreign key
 4. Email address
 
-* Business class
+### Business class
 * A business class with the following properties;
 
 1. Business name
@@ -53,13 +56,13 @@
 5. The Methods we will create are:
 
 
-* Business search
+### Business search
 * A business search functionality where users can search for businesses in their area.
 
-* Admin Dashboard
+### Admin Dashboard
 * A dashboard that you will use to manage the different users.
 
-* Authentication system
+### Authentication system
 * A solid authentication system that allows users to sign in or register into the application before using it. When a user registers with this application they should receive a confirmation email.
 
 ## User environment
