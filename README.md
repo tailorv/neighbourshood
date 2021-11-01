@@ -24,7 +24,7 @@
 * Only view details of a single neighborhood.
 
 ### System Features
-#### Feature 
+# Features 
 * NeighbourHood class:
 
 * A neighborhood class with the following properties:
