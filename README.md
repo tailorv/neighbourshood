@@ -34,7 +34,6 @@
 3. Occupants Count
 4. Admin Foreign key
 
-Some of the methods you will need to implement are:
 
 * User class
 * A user class with the following properties;
