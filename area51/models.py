@@ -64,10 +64,10 @@ class Neighbourhood(models.Model):
         return self.hood_name
 
 class Business(models.Model):
-    biz_name = models.CharField(max_length = 60)
-    biz_email = models.EmailField()
-    biz_description = models.TextField()
-    biz_digits = models.IntegerField(null=True)
+    biashara_name = models.CharField(max_length = 60)
+    biashara_email = models.EmailField()
+    biashara_description = models.TextField()
+    biashara_digits = models.IntegerField(null=True)
     pub_date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     Neighbourhood = models.ForeignKey(Neighbourhood, on_delete=models.CASCADE, related_name='businesses', null=True)
 
@@ -84,15 +84,15 @@ class Business(models.Model):
 
     @classmethod
     def update_business(cls,id,new_name):
-        cls.objects.filter(id=id).update(biz_name = new_name)
+        cls.objects.filter(id=id).update(biashara_name = new_name)
 
     @classmethod
     def search_business(cls, search_term):
-        biz = cls.objects.filter(biz_name__icontains=search_term)
-        return biz
+        biashara = cls.objects.filter(biashara_name__icontains=search_term)
+        return biashara
     
     def __str__(self):
-        return self.biz_name
+        return self.biashara_name
 
 class Post(models.Model):
     title = models.CharField(max_length = 60)
