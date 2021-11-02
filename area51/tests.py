@@ -42,7 +42,7 @@ class NeighbourhoodTestClass(TestCase):
 
 class BusinessTestClass(TestCase):
     def setUp(self):
-        self.new_business = Business(biashara_name ='Zaimet',biashara_email = 'zaimet@food.com', biashara_description='Eat good Live good', biashara_digits='0791122323')
+        self.new_business = Business(biz_name ='Zaimet',biz_email = 'zaimet@food.com', biz_description='Eat good Live good', biz_digits='0791122323')
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_business, Business))
