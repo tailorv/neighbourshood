@@ -34,7 +34,7 @@ class PostUploadForm(forms.ModelForm):
 class BizUploadForm(forms.ModelForm):
     class Meta:
         model = Business
-        fields = ['biz_name', 'biz_description', 'biz_digits', 'biz_email' ]
+        fields = ['biashara_name', 'biashara_description', 'biashara_digits', 'biashara_email' ]
 
     def form_valid(self, form):
         form.instance.user = self.request.profile
