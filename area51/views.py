@@ -89,9 +89,9 @@ def upload_business(request):
     if request.method == "POST":
         form = BizUploadForm(request.POST, request.FILES)
         if form.is_valid():
-            biz = form.save(commit = False)
-            biz.prof_ref = request.user.profile
-            biz.save()
+            biashara = form.save(commit = False)
+            biashara.prof_ref = request.user.profile
+            biashara.save()
             messages.success(request, f'Successfully uploaded your Business!')
             return redirect('business')
     else:
